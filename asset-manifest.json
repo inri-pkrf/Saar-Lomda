@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Saar-Lomda/static/css/main.6b98439d.css",
-    "main.js": "/Saar-Lomda/static/js/main.d7f92529.js",
+    "main.css": "/Saar-Lomda/static/css/main.3aa57041.css",
+    "main.js": "/Saar-Lomda/static/js/main.cf765549.js",
     "static/js/453.23178865.chunk.js": "/Saar-Lomda/static/js/453.23178865.chunk.js",
     "index.html": "/Saar-Lomda/index.html",
-    "main.6b98439d.css.map": "/Saar-Lomda/static/css/main.6b98439d.css.map",
-    "main.d7f92529.js.map": "/Saar-Lomda/static/js/main.d7f92529.js.map",
+    "main.3aa57041.css.map": "/Saar-Lomda/static/css/main.3aa57041.css.map",
+    "main.cf765549.js.map": "/Saar-Lomda/static/js/main.cf765549.js.map",
     "453.23178865.chunk.js.map": "/Saar-Lomda/static/js/453.23178865.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b98439d.css",
-    "static/js/main.d7f92529.js"
+    "static/css/main.3aa57041.css",
+    "static/js/main.cf765549.js"
   ]
 }
