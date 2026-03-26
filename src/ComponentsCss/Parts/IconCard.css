@@ -1,0 +1,109 @@
+/* ICON CARD */
+.icon-card {
+  width: 80vw;      
+  border: 0.8vw solid #e7a977;
+  border-radius: 4vw;
+  overflow: hidden;
+  font-family: "heebo";
+  direction: rtl; /* Hebrew support */
+}
+
+.icon-card-header {
+  background-color: #e7a977;
+  color: white;
+  text-align: center;
+  padding: 2vw 4vw;          /* responsive padding */
+  font-weight: bold;
+  font-size: 4vw;             /* scalable font size */
+}
+
+.icon-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4vw;
+  flex-wrap: wrap;
+  margin-right: 3vw ;         /* allows items to wrap on small screens */
+}
+
+.icon-card-content-centered {
+  justify-content: center;
+}
+
+.icon-card-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;                   /* responsive gap */
+  flex: 1 1 auto;             /* allow shrinking on small screens */
+  min-width: 40%;              /* prevent shrinking too much */
+}
+
+.icon-card-row {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  font-size: 3.5vw;            /* responsive font size */
+  font-weight: bold;
+}
+
+.icon-card-icon {
+  width: 4vw;
+  height: 4vw;
+  object-fit: contain;
+}
+
+.icon-card-label {
+  color: #000;
+  font-size: 4vw;
+  font-weight: normal;
+}
+
+.icon-card-plus {
+  width: 15vw;
+  height: 15vw;
+  border: 0.8vw solid #e7a977;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-card-plus span {
+  font-size: 6vw;
+  color: #e7a977;
+}
+
+/* partone-item container */
+.partone-item {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+/* dropdown area */
+.dropdown-content {
+  width: 100%;
+}
+
+/* cards container */
+.icon-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  align-items: center;
+}
+
+/* side icon */
+.icon-card-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-card-main-icon {
+  width: 20vw;
+  height: 20vw;
+  object-fit: contain;
+}

@@ -2,7 +2,18 @@ import React from 'react';
 import Carusel from './Carusel';
 import '../../ComponentsCss/Parts/DropBtn.css';
 
-function DropBtn({ label, isDone, onClick, isActive, images, currentSlide, onPrev, onNext }) {
+function DropBtn({
+  label,
+  isDone,
+  onClick,
+  isActive,
+  images,
+  currentSlide,
+  onPrev,
+  onNext,
+  children,
+  renderChildren = false // NEW
+}) {
   const buttonImg = `${process.env.PUBLIC_URL}/Img/${isActive ? 'partOne-btnOpen.png' : 'partOne-btn.png'}`;
 
   return (
@@ -20,6 +31,12 @@ function DropBtn({ label, isDone, onClick, isActive, images, currentSlide, onPre
         />
       </button>
 
+      {/* ✅ Render children ONLY if renderChildren is true */}
+      {isActive && renderChildren && (
+        <div className="drop-content">
+          {children}
+        </div>
+      )}
 
       {isActive && images && (
         <div className="drop-carousel-wrapper">

@@ -4,6 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import '../../ComponentsCss/Parts/PartOne.css';
 import DropBtn from '../../ComponentsJsx/Parts/DropBtn.jsx';
 import { useState } from 'react';
+import '../../ComponentsCss/Parts/PartFour.css';
+import IconCard from '../../ComponentsJsx/Parts/IconCard.jsx';  
+import { IconCardGroups } from '../../ComponentsJsx/Parts/IconCardGroups.js';
 
 function PartFour() {
   const navigate = useNavigate();
@@ -15,8 +18,6 @@ function PartFour() {
     'העברת מקל וסיום המשימה'
   ];
 
-  const [currentSlide, setCurrentSlide] = useState([0, 0, 0]);
-  const [completed, setCompleted] = useState([false, false, false]);
   const [active, setActive] = useState(null);
 
   return (
@@ -33,13 +34,48 @@ function PartFour() {
 
       <div className="partone-list">
         {buttonLabels.map((label, index) => (
-          <div className={`partone-item ${active === index ? 'active' : ''}`} key={label}>
+          <div
+            className={`partone-item ${active === index ? 'active' : ''}`}
+            key={label}
+          >
             <DropBtn
               label={label}
               onClick={() => setActive(index === active ? null : index)}
               isActive={active === index}
-
-            />
+              renderChildren={true}
+            >
+              {index !== 2 && [null, IconCardGroups.group1, IconCardGroups.group2, IconCardGroups.group3, IconCardGroups.group4][index + 1] && (
+                <div className="icon-cards-container">
+                  {[null, IconCardGroups.group1, IconCardGroups.group2, IconCardGroups.group3, IconCardGroups.group4][index + 1].map((card) => (
+                    <IconCard
+                      key={card.id}
+                      title={card.title}
+                      items={card.items}
+                      icon={card.icon}
+                      className={card.className}
+                    />
+                  ))}
+                </div>
+              )}
+              {index === 2 && (
+                <div>
+                  <div className="icon-cards-container">
+                    {IconCardGroups.group3.map((card) => (
+                      <IconCard
+                        key={card.id}
+                        title={card.title}
+                        items={card.items}
+                        icon={card.icon}
+                        className={card.className}
+                      />
+                    ))}
+                  </div>
+                  <div style={{width: '100%', textAlign: 'center', marginTop: '20px'}}>
+                    <img src={`${process.env.PUBLIC_URL}/Img/fourPart-pic.png`} alt="ביצוע" style={{width: '80vw', height: 'auto', maxWidth: '400px'}} />
+                  </div>
+                </div>
+              )}
+            </DropBtn>
           </div>
         ))}
       </div>
@@ -53,3 +89,4 @@ function PartFour() {
 }
 
 export default PartFour;
+

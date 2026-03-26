@@ -15,10 +15,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;     /* ✅ horizontal center */
-  padding-top: 10vh;
-  gap: 2vh; /* more gap between items */
+  padding-top: 10vw;
+  gap: 5vw; /* more gap between items */
   width: 100%;
-  margin-bottom: 20vh;
+  margin-bottom: 12vw;
 }
 
 .partone-item {
