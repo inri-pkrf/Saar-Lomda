@@ -36,7 +36,7 @@ function PartFive() {
             </BulletBtn>
           </div>
         ))}
-        <img src={`${process.env.PUBLIC_URL}/Img/partFive-pic.png`} alt="Part Five" id='part-five-img' />
+        <img src={`${process.env.PUBLIC_URL}/Img/PartFive-pic.png`} alt="Part Five" id='part-five-img' />
         {[
           'חלק בלתי נפרד מפעולות החילוץ',
           ' רוב הלכודים אינם גלויים',
