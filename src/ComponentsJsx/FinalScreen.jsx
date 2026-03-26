@@ -22,11 +22,22 @@ function FinalScreen() {
           backgroundImage: `url(${process.env.PUBLIC_URL}/Img/homePage-div.png)`
         }}
       >
-        <div className="homePage-content">
+        <div className="homePage-content final">
           <h1>כל הכבוד!</h1>
           <h2>סיימת את העזר בהצלחה</h2>
           <p>שחכת משהו? תמיד אפשר להתחיל שוב:</p>
-          <button className="homePage-btn" onClick={() => navigate('/')}>התחלה מחדש</button>
+          <button
+            className="homePage-btn"
+            onClick={() => {
+              try {
+                localStorage.removeItem('menuClickedButtons');
+                localStorage.removeItem('isCompleting');
+              } catch (error) {
+                console.error('Failed to reset local storage on restart', error);
+              }
+              navigate('/');
+            }}
+          >התחלה מחדש</button>
         </div>
       </div>
 

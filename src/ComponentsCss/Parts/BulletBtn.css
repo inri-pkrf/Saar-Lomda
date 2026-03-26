@@ -1,0 +1,60 @@
+.bullet-btn {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 2px solid #ED7D31;
+  border-radius: 24px;
+  color: #000;
+  cursor: pointer;
+  padding: 4vw 2vw;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 480px;
+  font-family: 'Heebo';
+  font-weight: 700;
+  transition: transform 0.2s ease;
+  gap: 5vw;
+  text-align: right;
+}
+
+.bullet-btn:hover {
+  transform: translateY(-2px);
+}
+
+.bullet-btn__icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 0.8rem;
+}
+
+.bullet-btn__text {
+  flex: 1;
+  font-size: 5vw;
+  color: #000;
+  font-weight: normal;
+}
+
+.bullet-btn--small {
+  min-height: 6vw;
+}
+
+.bullet-btn--big {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  min-height: auto;
+}
+
+.bullet-btn--big .bullet-btn__text {
+  font-size: 5vw;
+  margin-bottom: 0.6rem;
+}
+
+.bullet-btn--big .bullet-btn__content {
+  width: 90%;
+  background: #ED7D31;
+    box-shadow: #919191 4px 4px 8px;
+  border-radius: 16px;
+  padding: 0.8rem;
+  min-height: 7rem;
+}

@@ -95,10 +95,12 @@
 /* responsive text */
 .homePage-content h1 {
   font-size: 10vw;
+  font-weight: lighter;
 }
 
 .homePage-content h2 {
-  font-size: 14vw;
+  font-size: 16vw;
+  font-weight: lighter;
 }
 
 /* responsive button */

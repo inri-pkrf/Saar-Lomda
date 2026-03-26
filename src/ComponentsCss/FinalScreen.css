@@ -45,13 +45,13 @@
 }
 
 /* responsive text */
-.homePage-content h1 {
+.homePage-content.final h1 {
   font-size: 15vw;
   font-weight: lighter;
   
 }
 
-.homePage-content h2 {
+.homePage-content.final h2 {
   font-size: 12vw;
   font-weight: lighter;
 }

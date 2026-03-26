@@ -1,0 +1,67 @@
+.partone-root {
+  min-height: 100vh;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Karantina";
+  box-sizing: border-box;
+}
+
+/* LIST CONTAINER - CENTERED */
+.partone-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;     /* ✅ horizontal center */
+  padding-top: 10vh;
+  gap: 2vh; /* more gap between items */
+  width: 100%;
+  margin-bottom: 20vh;
+}
+
+.partone-item {
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.next-topic-btn {
+  font-size: 10vw;
+  background-color: #ffffff00;  .partone-root {
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Add this */
+    font-family: "Karantina";
+    box-sizing: border-box;
+  }
+  
+  .partone-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 10vh; */  /* Remove or comment out this */
+    gap: 2vh;
+    width: 100%;
+    /* margin-bottom: 20vh; */  /* Remove or comment out this */
+  }
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Karantina";
+
+  gap: 2vw;
+  display: flex;
+  flex-direction: column; /* 👈 stack items vertically */
+  align-items: center;
+}
+
+.next-btn-icon {
+  width: 30vw;
+}

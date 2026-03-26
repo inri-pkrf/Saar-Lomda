@@ -1,7 +1,8 @@
 .Menu {
   min-height: 100vh;
   background-color: #000;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   position: relative;
   font-family: "heebo";
   direction: rtl;
@@ -29,16 +30,15 @@
 
 /* Container */
 #buttons-div {
-    position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column; /* vertical stack */
   align-items: center;    /* center horizontally */
   gap: 2vh;               /* space between buttons */
   padding: 4vh 3vh;
   border-radius: 8vw;
-  top: 63%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 30vh auto 5vh;
+  width: 75%;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -139,3 +139,31 @@
   to { transform: translateX(-50%) scale(1.03); }
 }
 
+.Menu #menu-btn {
+  position: static;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.Menu #menu-btn.next-topic-btn {
+  position: static;
+}
+
+.next-topic-btn {
+  width: 100%;
+  max-width: 420px;
+  margin: 2vh auto 4vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
