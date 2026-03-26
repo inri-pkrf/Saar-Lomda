@@ -25,7 +25,7 @@ function FinalScreen() {
         <div className="homePage-content final">
           <h1>כל הכבוד!</h1>
           <h2>סיימת את העזר בהצלחה</h2>
-          <p>שחכת משהו? תמיד אפשר להתחיל שוב:</p>
+          <p>שכחת משהו? תמיד אפשר להתחיל שוב:</p>
           <button
             className="homePage-btn"
             onClick={() => {

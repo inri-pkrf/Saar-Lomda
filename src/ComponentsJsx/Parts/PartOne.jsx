@@ -85,7 +85,7 @@ function PartOne() {
       </div>
       <button className='next-topic-btn' onClick={() => navigate("/Menu")}>
         <img src={`${process.env.PUBLIC_URL}/Img/nextTopic-btn.png`} alt="nextTopic" className='next-btn-icon'/>
-        <span>לנושא הבא</span>
+        <span>חזרה לתפריט</span>
       </button>
     </div>
   );
